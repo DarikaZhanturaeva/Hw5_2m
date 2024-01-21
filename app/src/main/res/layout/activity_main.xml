@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="556dp"
+        android:layout_height="700dp"
+        android:src="@drawable/traingle"
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="LOG IN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/kitten"
+        app:layout_constraintStart_toStartOf="@id/kitten"
+        app:layout_constraintTop_toBottomOf="@id/kitten"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:text="Trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@id/kitten"
+        app:layout_constraintStart_toStartOf="@id/kitten"
+        app:layout_constraintTop_toBottomOf="@id/kitten"
+        android:src="@drawable/baseline_arrow_circle_down_24"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/kitten"
+        android:src="@drawable/ic_kitten1"
+        android:backgroundTint="@color/transparent"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toTopOf="@id/Log_Google"
+        app:layout_constraintEnd_toEndOf="@id/Log_Google"
+        app:layout_constraintStart_toStartOf="@id/Log_Google"
+        android:layout_width="130dp"
+        android:layout_height="130dp"/>
+
+    <Button
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@id/Log_Google"
+        app:layout_constraintStart_toStartOf="@id/Log_Google"
+        app:layout_constraintTop_toBottomOf="@id/Log_Google"
+        android:textStyle="bold"
+        android:background="@color/transparent"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Up with Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/game_now"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/pink"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="GAME NOW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/transparent"
+        android:src="@drawable/ic_catt"
+        app:layout_constraintStart_toStartOf="@id/Log_Google"
+        app:layout_constraintBottom_toBottomOf="@id/Log_Google"
+        app:layout_constraintTop_toTopOf="@id/Log_Google"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@id/Log_Google"
+        app:layout_constraintStart_toStartOf="@id/Log_Google"
+        app:layout_constraintTop_toBottomOf="@id/Log_Google"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:text="--------  OR  --------"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/Log_Google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/game_now"
+        android:backgroundTint="@color/transparent"
+        android:text="Log in with Google"
+        android:textColor="@color/purple"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
